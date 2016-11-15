@@ -13,6 +13,16 @@
 <body>
 <h1>南无地藏菩萨摩诃萨！</h1>
 <h1>南无阿弥陀佛！</h1>
+<%=session.getId()%><br>
+<%--<%=(session.getAttribute("message") != null) ? session.getAttribute("email") : ""%>--%>
+<%
+    if ((session.getAttribute("welcome"))!=null){
+        out.println(session.getAttribute("welcome"));
+    }else {
+        out.println("");
+    }
+%>
+<br>
 <a href="logout.jsp">Log Out</a>
 </body>
 </html>

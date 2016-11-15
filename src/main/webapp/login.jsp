@@ -12,7 +12,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>login page</title>
 </head>
 <body>
 <%
@@ -28,7 +28,7 @@
 
 
     if (resultSet.next()){
-        session.setAttribute("您好",email);
+        session.setAttribute("welcome","欢迎您："+email);
         response.sendRedirect("home.jsp");
     }else {
         request.setAttribute("提示：","账号或密码不正确");

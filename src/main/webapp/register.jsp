@@ -2,7 +2,6 @@
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.DriverManager" %>
 <%@ page import="java.sql.PreparedStatement" %>
-<%@ page import="java.sql.Array" %>
 <%@ page import="java.util.Arrays" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -13,7 +12,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>register page</title>
 </head>
 <body>
 <%
@@ -42,6 +41,8 @@
     preparedStatement.executeUpdate();
     connection.close();
     preparedStatement.close();
+    request.setAttribute("message","注册成功");
+    out.println();
     //request.getRequestDispatcher("index.jsp").forward(request, response);
     response.sendRedirect("index.jsp");
 
