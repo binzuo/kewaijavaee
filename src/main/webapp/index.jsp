@@ -13,7 +13,7 @@
   <body>
   <h1>index page</h1>
   <%=session.getId()%>
-  <form action="login.jsp" method="post">
+  <form action="/login" method="post">
     <input type="text" name="email" value="18310996173xiaozuo@gmail.com">eamil<br>
     <input type="password" name="password" value="xinabcd3388725">password<br>
     <input type="submit" value="Log In">

@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>sign up</h1>
-<form action="register.jsp" method="post">
+<form action="/register" method="post">
     <input type="text" name="email" placeholder="EMAIL" value="18310996173xiaozuo@gmail.com">email<br>
     <input type="password" name="password" placeholder="PASSWORD" value="xinabcd3388725">password<br>
     <select name="cities" multiple="multiple">

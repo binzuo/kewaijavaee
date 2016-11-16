@@ -23,6 +23,6 @@
     }
 %>
 <br>
-<a href="logout.jsp">Log Out</a>
+<a href="/logout">Log Out</a>
 </body>
 </html>
